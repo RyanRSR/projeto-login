@@ -49,6 +49,8 @@ section#login{
     height: 500px;
     margin: auto;
     
+    transition: width 0.6s, height 0.6s; 
+    transition-timing-function: ease;
 
 }
 
