@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+
+/*Paleta de cores:*/
+
+
+:root{
+--caixa: hsl(0 0% 5%);
+--bordas: hsl(0 0% 25%);
+--texto: hsl(0 0% 100%);
+
+}
+
+body{
+    background-color: var(--caixa);
+}
+    
