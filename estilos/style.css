@@ -73,6 +73,10 @@ section#login > div#formulario{
 
 }
 
+div#formulario i{
+    font-size: 1.7em;
+}
+
 section#login > div#formulario > h1{
 
     color: var(--titulo);
@@ -101,6 +105,7 @@ form input[type=password]{
     border-radius: 5px;
     border: none;
     padding: 10px;
+    color: var(--texto);
 }
 
 form >input[type=submit]{

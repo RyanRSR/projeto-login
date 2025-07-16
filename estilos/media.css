@@ -18,6 +18,12 @@
         float:right;
         width: 35%;
     }
+
+    form input[type=email], 
+    form input[type=password]{
+        width: calc(100% - 2.5em);
+    
+    }
 }
 
 
@@ -40,5 +46,11 @@
     section#login > div#formulario > p{
     color: var(--texto);
     font-size: 1.2em;
-}
+    
+    }
+    form input[type=email], 
+    form input[type=password]{
+        width: calc(100% - 2.5em);
+    
+    }
 }
