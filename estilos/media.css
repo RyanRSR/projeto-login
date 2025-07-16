@@ -11,12 +11,12 @@
 
     section#login > div#imagem{
         float: left;
-        width: 30%;
+        width: 65%;
         height: 100%;
     }
     section#login > div#formulario{
         float:right;
-        width: 70%;
+        width: 35%;
     }
 }
 
@@ -29,13 +29,16 @@
 
     section#login > div#imagem{
         float: left;
-        width: 50%;
+        width: 65%;
         height: 100%;
     }
 
     section#login >div#formulario{
         float: right;
-        width: 50%;
+        width: 35%;
     }
-    
+    section#login > div#formulario > p{
+    color: var(--texto);
+    font-size: 1.2em;
+}
 }

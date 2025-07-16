@@ -10,8 +10,8 @@
 --bg-imagens: hsl(0 0% 15%);
 --bordas: hsl(0 0% 25%);
 --titulo: hsl(0 0% 100%);
---texto: hsl(10 0% 95%);
-
+--texto: hsl(0 0% 95%);
+--forms: hsl(0 0% 80%);
 
 }
 
@@ -64,13 +64,23 @@ section#login > div#imagem{
 section#login > div#formulario{
     display:block;
     padding: 10px;
+
+
 }
 
 section#login > div#formulario > h1{
 
     color: var(--titulo);
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 section#login > div#formulario > p{
     color: var(--texto);
+    font-size: 0.8em;
+}
+
+section#login > div#formulario > form{
+    color: var(--forms);
+    
 }
