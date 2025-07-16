@@ -7,10 +7,15 @@
 :root{
 --fundo: hsl(0 0% 0%);
 --caixa: hsl(0 0% 10%);
---bg-imagens: hsl(0 0% 15%);
---bordas: hsl(0 0% 25%);
+--caixa-texto: hsl(0 0% 15%);
+--botao: hsl(0 0% 20%);
+--botao-h: hsl(0 0% 25%);
+--bg-imagens: hsl(0 0% 30%);
+--bordas: hsl(0 0% 35%);
+--highlight: hsl(0 0% 45%);
 --titulo: hsl(0 0% 100%);
 --texto: hsl(0 0% 95%);
+--links: hsl(0 0% 85%);
 --forms: hsl(0 0% 80%);
 
 }
@@ -46,7 +51,7 @@ section#login{
 
     border-radius: 20px;
     width: 250px;
-    height: 500px;
+    height: 520px;
     margin: auto;
     
     transition: width 0.6s, height 0.6s; 
@@ -82,5 +87,56 @@ section#login > div#formulario > p{
 
 section#login > div#formulario > form{
     color: var(--forms);
+    
+}
+form >div.campo{
+    width: 100%;
+    height: 40px;
+    margin: 5px 0px;
+}
+form input[type=email], 
+form input[type=password]{
+
+    background-color: var(--caixa-texto);
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+}
+
+form >input[type=submit]{
+    display: block;
+    font-size: 1em;
+    font-weight: bold   ;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    background-color:var(--botao);
+    color: var(--titulo);
+    margin-top: 10px;
+    margin-right: 10px;
+    border: none;
+}
+
+form >input[type=submit]:hover{
+    background-image: linear-gradient(to bottom, var(--botao-h) 70%, var(--botao));
+    border-top:1px solid var(--highlight);
+    cursor: pointer;
+}
+
+form >a.botao{
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    width: 100%;
+    height: 40px;
+    color: var(--links);
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+form >a.botao:hover{
+    background-color: var(--botao-h);
+    border-radius: 10px;
+    transition: 0.5s;
     
 }
