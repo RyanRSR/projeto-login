@@ -47,19 +47,22 @@ body, html{
     background-color: var(--fundo);
     height: 100vh;
     width: 100vw;
+    display: flex;
+    align-items: flex-end;
 }
 
+
 main{
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     width: 100vw;
 }
 
 section#login{
-    position: absolute;
-    top: 50%;
-    left:50%;
-    transform:translate(-50%, -50%) ;    
+    display: flex;
+    align-self: center ;
     overflow: hidden;
    
     background-color: var(--caixa);
@@ -161,3 +164,4 @@ form >a.botao:hover{
     transition: 0.5s;
     
 }
+
