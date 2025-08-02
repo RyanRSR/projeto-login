@@ -1,10 +1,10 @@
-    @charset "utf-8";
+@charset "utf-8";
 
 
     /*Paleta de cores:*/
 
 
-    :root{
+    .dark{
     --fundo: hsl(0 0% 0%);
     --caixa: hsl(0 0% 10%);
     --caixa-texto: hsl(0 0% 15%);
@@ -48,7 +48,6 @@
         height: 100vh;
         width: 100vw;
         display: flex;
-        justify-content:;
     }
 
 
@@ -61,7 +60,6 @@
     }
 
     section#login{
-        display: flex;
         align-self: center ;
         overflow: hidden;
     
@@ -69,7 +67,7 @@
         border: 1px solid var(--bordas);
 
         border-radius: 20px;
-        width: 250px;
+        width: 275px;
         height: 520px;
         margin: auto;
         
@@ -177,8 +175,13 @@
     }
     .switch:hover{
         cursor:pointer;
-        background-color: var(--botao-h);
+        background-color: hsl(0 0% 85%);
+        border-radius: 50%;
         
+    }
+
+    body.dark .switch:hover{
+        background-color: hsl(0 0% 15%);
     }
 
     .switch .material-symbols-outlined {
@@ -186,3 +189,10 @@
     font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
 }
 
+body.dark i{
+    color: white
+}
+
+body.light i{
+    color: black
+}
