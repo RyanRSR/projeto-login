@@ -114,6 +114,11 @@
         width: 100%;
         height: 40px;
         margin: 5px 0px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
     }
     form input[type=email], 
     form input[type=password]{
@@ -146,14 +151,18 @@
     }
 
     form >a.botao{
-        display: block;
-        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 50%;
         line-height: 40px;
         width: 100%;
         height: 40px;
         color: var(--links);
         text-decoration: none;
         margin-bottom: 5px;
+
+        
     }
 
     form >a.botao:hover{
@@ -195,4 +204,10 @@ body.dark i{
 
 body.light i{
     color: black
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
