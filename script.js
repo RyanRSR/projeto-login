@@ -18,13 +18,14 @@ button.addEventListener('click', switchTheme)
 function switchTheme(){
     
         if(body.classList.contains('dark')){
-            icon.textContent = 'light_mode'
             body.classList.replace('dark', 'light')
             localStorage.setItem('theme', 'light')
+            icon.textContent = 'dark_mode'
+            
         }else if(body.classList.contains('light')){
             body.classList.replace('light', 'dark')
-            icon.textContent = 'dark_mode'
             localStorage.setItem('theme', 'dark')
+            icon.textContent = 'light_mode'
         }
     
 

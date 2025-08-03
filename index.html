@@ -11,7 +11,7 @@
 <body   >
     <section>
         <button id="switch-theme" class="switch">
-            <i id="ico" class="material-symbols-outlined" >dark_mode</i>
+            <div class="flex"><i id="ico" class="material-symbols-outlined" >dark_mode</i></div>
         </button>
     </section>
     <main>
@@ -25,7 +25,7 @@
                 <p>Seja bem vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
                 <form action="login.php" method="post" autocomplete="on">
                     <div class="campo">
-                        <label for="ilogin"><i class="material-symbols-outlined">person</i></label>
+                        <label for="ilogin"><div class="flex"><i class="material-symbols-outlined">person</i></div></label>
                         <input type="email" name="login" id="ilogin" placeholder="seu e-mail" autocomplete="email" required>
                         
                     </div>
@@ -37,7 +37,7 @@
                     <input type="submit" value="Entrar">
                     <br>
                     <a href="esqueci.html" class="botao">
-                        Esqueci a Senha <i class="material-symbols-outlined">mail</i>
+                        Esqueci a Senha <div class="flex"><i class="material-symbols-outlined">mail</i></div>
                     </a>
                     </form>
             </div>
